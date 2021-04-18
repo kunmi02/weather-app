@@ -1,4 +1,30 @@
 body {
   color: white;
-  background-color: black;
+  background-image: url("./assets/background.jpg");
+  /* background-color: black; */
+  text-align: center
+}
+
+h1 {
+  text-transform:uppercase
+}
+
+#response {
+  color: white;
+}
+
+#error {
+  color: red;
+}
+
+input {
+  border-radius: 15px 50px 30px;
+  border: 2px solid #609;
+  padding: 20px; 
+    width: 200px;
+    height: 15px;
+}
+button {
+  background-color: #008CBA;
+  border-radius: 12px;  
 }
