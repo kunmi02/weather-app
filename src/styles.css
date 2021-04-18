@@ -1,12 +1,13 @@
 body {
   color: white;
   background-image: url("./assets/background.jpg");
+
   /* background-color: black; */
-  text-align: center
+  text-align: center;
 }
 
 h1 {
-  text-transform:uppercase
+  text-transform: uppercase;
 }
 
 #response {
@@ -20,11 +21,12 @@ h1 {
 input {
   border-radius: 15px 50px 30px;
   border: 2px solid #609;
-  padding: 20px; 
-    width: 200px;
-    height: 15px;
+  padding: 20px;
+  width: 200px;
+  height: 15px;
 }
+
 button {
-  background-color: #008CBA;
-  border-radius: 12px;  
+  background-color: #008cba;
+  border-radius: 12px;
 }

@@ -18,7 +18,8 @@
     "no-use-before-define":"off",
     "no-loop-func": "off",
     "no-unused-vars": "off",
-    "import/no-cycle": "off"
+    "import/no-cycle": "off",
+    "no-useless-concat": "off"
   },
   "ignorePatterns": [
     "dist/",
