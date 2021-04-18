@@ -1,5 +1,4 @@
 # weather-app
-# TODO LIST
 
 This project is to showcase my knowledge on webpack. It is an app that takes user location and returns the weather information
 
@@ -7,19 +6,19 @@ This project is to showcase my knowledge on webpack. It is an app that takes use
 
 ## Screenshot
 
-TODO List Landing Page
+Weatherapp List Landing Page
 
 ![Screenshot of the Book Library](src/assets/home.png)
 
-TODO List Project Creation View
-![Screenshot of the Book Library](src/assets/create_project.png)
+Weatherapp response page
+![Screenshot of the Book Library](src/assets/response.png)
 
 ## Description
 
 A simple JS based App for todo list app.
 
 ## Setup
-- Clone the project by running `git clone https://github.com/kunmi02/todo-list.git` on terminal or CMD
+- Clone the project by running `git clone https://github.com/kunmi02/weather-app.git` on terminal or CMD
 - Run terminal or CMD from the project directory.
 -  Run `npm install`. If you do not have `npm` installed you can get it from [here](https://www.npmjs.com/).
 - Run `npm start` to lauch a local web server and open a tab in you Browser with the page.
