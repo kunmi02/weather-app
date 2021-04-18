@@ -2,8 +2,11 @@ body {
   color: white;
   background-image: url("./assets/background.jpg");
 
-  /* background-color: black; */
-  text-align: center;
+    text-align: center;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
