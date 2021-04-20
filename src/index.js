@@ -1,8 +1,8 @@
 import getWeatherData from './modules/requester';
 import './styles.css';
 
-const displayValues = (response) => {
-  console.log(response);
+const displayValues = (responses) => {
+  const response = responses.list[0];
   try {
     const { message } = response;
     if (message) {
@@ -10,7 +10,7 @@ const displayValues = (response) => {
       return;
     }
   } catch (e) {
-    alert(e);
+    return;
   }
   const container = document.querySelector('#response');
   container.innerHTML = '';
@@ -81,9 +81,12 @@ const displayError = () => {
   p.textContent = 'Weather information for your chosen location is not available';
   container.appendChild(p);
 };
-const request = (location) => {
-  console.log('Weather Function');
-  getWeatherData(location).then(
+const request = (location, units) => {
+  if (location === '') {
+    displayError();
+    return;
+  }
+  getWeatherData(location, units).then(
     (value) => { displayValues((value)); },
     (error) => { displayError((error)); },
   );
@@ -91,7 +94,7 @@ const request = (location) => {
 
 const requestForm = (container) => {
   const label = document.createElement('label');
-  label.textContent = 'Enter city name';
+  label.textContent = 'Enter city name and select temperature metric';
   container.appendChild(label);
   container.appendChild(document.createElement('br'));
   container.appendChild(document.createElement('br'));
@@ -101,11 +104,27 @@ const requestForm = (container) => {
   location.placeholder = 'Enter city location';
   container.appendChild(location);
 
+  const x = document.createElement('SELECT');
+  x.id = 'mySelect';
+  container.appendChild(x);
+
+  const z = document.createElement('option');
+  z.setAttribute('value', 'imperial');
+  const t = document.createTextNode('Fahrenheit');
+  z.appendChild(t);
+  x.appendChild(z);
+
+  const zy = document.createElement('option');
+  zy.setAttribute('value', 'metric');
+  const ty = document.createTextNode('Celsius');
+  zy.appendChild(ty);
+  x.appendChild(zy);
+
   const submitButton = document.createElement('button');
   submitButton.innerHTML = 'Submit';
 
   submitButton.addEventListener('click', () => {
-    request(location.value);
+    request(location.value, x.value);
     location.value = '';
   });
 
