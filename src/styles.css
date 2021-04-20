@@ -1,0 +1,42 @@
+body {
+  color: white;
+  background-image: url("./assets/background.jpg");
+  text-align: center;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+#response {
+  color: white;
+}
+
+#error {
+  color: red;
+}
+
+input {
+  border-radius: 15px 50px 30px;
+  border: 5px solid #609;
+  padding: 20px;
+  width: 200px;
+  height: 15px;
+}
+
+select {
+  border-radius: 15px 50px 30px;
+  border: 5px solid #609;
+  padding: 10px;
+  width: 200px;
+  height: 55px;
+}
+
+button {
+  background-color: #008cba;
+  border-radius: 12px;
+}
