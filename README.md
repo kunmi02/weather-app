@@ -34,7 +34,7 @@ A simple JS based App for todo list app.
 - LocalStorage
 
 ## Demo Link
-http://akinkunmi.me/weather-app/
+https://kunmi02.github.io/weather-app/
 
 ## Contributing
 
