@@ -86,7 +86,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst baseUrl = 'http://api.openweathermap.org/data/2.5/find?q=';\nconst apiKey = '63f5550851a7e639b98f0c7c3e0e2e06';\nasync function getWeatherData(city, units) {\n  try {\n    const response = await fetch(`${baseUrl + city}&appid=${apiKey}&units=${units}`);\n    const data = await response.json();\n    return data;\n  } catch {\n    return null;\n  }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getWeatherData);\n\n\n//# sourceURL=webpack://weather-app/./src/modules/requester.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst baseUrl = 'https://api.openweathermap.org/data/2.5/find?q=';\nconst apiKey = '63f5550851a7e639b98f0c7c3e0e2e06';\nasync function getWeatherData(city, units) {\n  try {\n    const response = await fetch(`${baseUrl + city}&appid=${apiKey}&units=${units}`);\n    const data = await response.json();\n    return data;\n  } catch {\n    return null;\n  }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getWeatherData);\n\n\n//# sourceURL=webpack://weather-app/./src/modules/requester.js?");
 
 /***/ })
 
